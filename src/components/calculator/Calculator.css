@@ -1,0 +1,77 @@
+.App{
+  width: 300px;
+  background: black;
+  border-radius: 50px;
+  color: white;
+  /* height: 1218px; */
+  padding: 20px;
+  position: relative;
+}
+@media (min-width: 768px) {
+  .App {
+    
+    width: 600px;
+  }
+}
+
+.top {
+  display: flex;
+  /* height: 250px; */
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.display {
+  font-size: 75px;
+  font-weight: 300;
+  margin-bottom: 20px;
+  text-align: right;
+  word-wrap: break-word;
+}
+
+.buttons {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: repeat(5, 1fr);
+}
+
+.scientific-buttons {
+  display: none;
+}
+@media (min-width: 768px) {
+  .scientific-buttons {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+  }
+}
+
+.outer-buttons {
+  display: grid;
+  grid-gap: 20px;
+  grid-template-columns: repeat(1, 1fr);
+}
+@media (min-width: 768px) {
+  .outer-buttons {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.bottom {
+  position: absolute;
+  width: 200px;
+  height: 5px;
+  background: white;
+  bottom: 10px;
+  left: 50%;
+  border-radius: 4px;
+  transform: translateX(-50%);
+}
+
+button{
+  border-color: black;
+  background-color: black;
+  color: white;
+}
