@@ -8,10 +8,9 @@ const Calculator = () => {
   const [value, setValue] = useState("0");
   const [memory, setMemory] = useState(null);
   const [operator, setOperator] = useState(null);
-  let num;
-
+ 
   const handleButtonPress = (content) => () => {
-    num = parseFloat(value);
+  const num = parseFloat(value);
 
     if (content === "AC") {
       setValue("0");
