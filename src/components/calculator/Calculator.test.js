@@ -19,9 +19,7 @@ describe("component rendering", () => {
     expect(wrapper.find("ScientificButton")).toHaveLength(16);
   });
 
-  it("should render 1 <button>", () => {
-    expect(wrapper.find("button")).toHaveLength(1);
-  });
+ 
 });
 
 describe("Calculator display content test", () => {
